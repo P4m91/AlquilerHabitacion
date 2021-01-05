@@ -5,19 +5,19 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import api.core.service.ICandidateService;
+import api.core.service.IAlquileresService;
 import com.ontimize.jee.server.rest.ORestController;
 
 @RestController
-@RequestMapping("/candidates")
-@ComponentScan(basePackageClasses = { api.core.service.ICandidateService.class })
-public class CandidateRestController extends ORestController<ICandidateService> {
+@RequestMapping("/alquileres")
+@ComponentScan(basePackageClasses = { api.core.service.IAlquileresService.class })
+public class AlquileresRestController extends ORestController<IAlquileresService> {
 
  @Autowired
- private ICandidateService candidateService;
+ private IAlquileresService alquileresService;
 
  @Override
- public ICandidateService getService() {
-  return this.candidateService;
+ public IAlquileresService getService() {
+  return this.alquileresService;
  }
 }
