@@ -105,7 +105,6 @@
     <module>api</module>
     <module>model</module>
     <module>ws</module>
-    <module>frontend</module>
     <module>boot</module>
   </modules>
 </project>
