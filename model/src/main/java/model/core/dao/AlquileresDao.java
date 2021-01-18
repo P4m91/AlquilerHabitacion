@@ -12,17 +12,17 @@ import com.ontimize.jee.server.dao.jdbc.OntimizeJdbcDaoSupport;
 public class AlquileresDao extends OntimizeJdbcDaoSupport {
 
  public static final String ATTR_id_alquileres = "id_alquileres";
- public static final String ATTR_ciudad = "CIUDAD";
- public static final String ATTR_localidad = "LOCALIDAD";
- public static final String ATTR_picture = "PICTURE";
- public static final String ATTR_precio = "PRECIO";
- public static final String ATTR_numero_habitaciones = "NUMERO_HABITACIONES";
- public static final String ATTR_numero_baños = "NUMERO_BAÑOS";
- public static final String ATTR_amueblada = "AMUEBLADA";
- public static final String ATTR_ascensor = "ASCENSOR";
- public static final String ATTR_animales = "ANIMALES";
- public static final String ATTR_curso_completo = "CURSO_COMPLETO";
- public static final String ATTR_direccion = "DIRECCION";
+ public static final String ATTR_ciudad = "ciudad";
+ public static final String ATTR_localidad = "localidad";
+ public static final String ATTR_picture = "picture";
+ public static final String ATTR_precio = "precio";
+ public static final String ATTR_numero_habitaciones = "numero_habitaciones";
+ public static final String ATTR_numero_baños = "numero_baños";
+ public static final String ATTR_amueblada = "amueblada";
+ public static final String ATTR_ascensor = "ascensor";
+ public static final String ATTR_animales = "animales";
+ public static final String ATTR_curso_completo = "curso_completo";
+ public static final String ATTR_direccion = "direccion";
  
  
 
