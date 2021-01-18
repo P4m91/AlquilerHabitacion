@@ -65,7 +65,7 @@ spring:
       driver-class-name: org.postgresql.Driver
       jdbcUrl: jdbc:postgresql://localhost:5432/postgres
       username: postgres
-      password: admin
+      password: imatia
       initialSize: 10
       testOnBorrow: true
    main:
