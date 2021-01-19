@@ -3,6 +3,10 @@ import { CommonModule } from "@angular/common";
 import { OntimizeWebModule } from "ontimize-web-ngx";
 import { AlquileresRoutingModule } from "./alquileres-routing.module";
 import { AlquileresHomeComponent } from "./alquileres-home/alquileres-home.component";
+import { AlquileresDetailComponent } from "./alquileres-detail/alquileres-detail.component";
+import { AlquileresNewComponent } from "./alquileres-new/alquileres-new.component";
+
+
 
 
 
@@ -13,7 +17,9 @@ import { AlquileresHomeComponent } from "./alquileres-home/alquileres-home.compo
     AlquileresRoutingModule
   ],
   declarations: [
-     AlquileresHomeComponent
+     AlquileresHomeComponent,
+     AlquileresDetailComponent,
+     AlquileresNewComponent
     ]
 })
 export class AlquileresModule {}

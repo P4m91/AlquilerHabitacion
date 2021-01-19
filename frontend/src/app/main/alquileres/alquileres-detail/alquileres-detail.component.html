@@ -1,0 +1,30 @@
+
+<o-form service="alquileres" entity="alquileres" keys="id_alquiler" header-actions="R;I;U;D" show-header-navigation="no">
+  <o-text-input attr="Datos del alquiler" sql-type="INTEGER" enabled="no"></o-text-input>
+  <o-row>
+    <o-column>
+      <o-image id="alquiler_picture" attr="picture" empty-image="assets/images/no-image.png" sql-type="OTHER" width="100" height="100"></o-image>
+    </o-column>
+    <o-column title-label="Información sobre el alquiler" fxFlex>
+      <o-row>
+        <o-text-input class="input-padding" attr="direccion" fxFlex="20" required="yes"></o-text-input>
+        <o-text-input class="input-padding" attr="ciudad" fxFlex="40" required="yes"></o-text-input>
+        <o-text-input class="input-padding" attr="localidad" fxFlex="40" required="yes"></o-text-input>
+        <o-date-input attr="Disponibilidad" fxFlex="20"></o-date-input>
+      </o-row>
+
+      <o-row>
+        <select attr="curso_completo" class="input-padding" fxFlex="20" required="yes"> <option> Un cuatrimestre </option> <option>Curso completo</option> </select>
+        <o-real-input attr="precio" decimal-separator="," max-decimal-digits="10" min-decimal-digits="0" class="input-padding" fxFlex="50"></o-real-input>
+        <o-real-input attr="numero_habitaciones" class="input-padding" type= "number" pattern="[0-9]" min="1" step="1" fxFlex="50"> </o-real-input>
+      </o-row>
+
+      <o-row>
+          <o-real-input attr="numero_baños" class="input-padding" fxFlex="50"></o-real-input>
+          <select attr="amueblada" class="input-padding" fxFlex="40" required="yes"> <option> Si</option> <option>No</option> </select>
+          <select attr="ascensor" class="input-padding" fxFlex="40" required="yes"> <option> Si</option> <option>No</option> </select>
+          <select attr="animales" class="input-padding" fxFlex="40" required="yes"> <option> Si</option> <option>No</option> </select>
+      </o-row>
+   </o-column>
+  </o-row>
+</o-form>

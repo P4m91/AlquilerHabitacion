@@ -1,10 +1,13 @@
+<o-form-layout-manager title="Alquileres" separator=" " mode="tab" label-columns="id_alquiler;ciudad">
 <div fxFlex>
-  <o-table fxFlex attr="alquileresTable" service="alquileres" entity="alquileres" keys="id_alquiler"
+
+    <o-table fxFlex attr="alquileresTable" service="alquileres" entity="alquileres" keys="id_alquiler"
     columns="ciudad;localidad;picture;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion"
     visible-columns="ciudad;localidad;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion" query-rows="20">
     <o-table-column attr="PHOTO" title="PHOTO" orderable="no" searchable="no" type="image" avatar="yes"
       empty-image="assets/images/no-image.png" image-type="base64"></o-table-column>
     <o-table-column attr="STARTDATE" title="STARTDATE" type="date" format="LL"></o-table-column>
     <o-table-column attr="ID" title="ID" width="100px"></o-table-column>
-  </o-table>
-  </div>
+     </o-table>
+</div>
+</o-form-layout-manager>
