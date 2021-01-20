@@ -1,5 +1,4 @@
 package model.core.service;
-
 import java.util.List;
 import java.util.Map;
 
@@ -39,5 +38,4 @@ public class AlquileresService implements IAlquileresService {
 	public EntityResult alquileresUpdate(Map<String, Object> attrMap, Map<String, Object> keyMap) {
 		 return this.daoHelper.update(this.alquileresDao, attrMap, keyMap);
 	}
-
 }

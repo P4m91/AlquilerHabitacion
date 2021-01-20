@@ -5,6 +5,7 @@ import { AuthGuardService } from 'ontimize-web-ngx';
 import { MainComponent } from './main.component';
 import { HomeModule } from './home/home.module';
 import { AlquileresModule } from './alquileres/alquileres.module';
+import  { EmployeesModule } from './employees/employees.module';
 
 
 
@@ -14,6 +15,11 @@ export function loadHomeModule() {
 export function loadAlquileresModule() {
   return AlquileresModule;
 }
+
+export function loadEmployeesModule(){
+  return EmployeesModule;
+}
+
 export const routes: Routes = [
   {
     path: '',
@@ -26,7 +32,12 @@ export const routes: Routes = [
     {
       path: 'alquileres',
       loadChildren: loadAlquileresModule
-    }
+    },
+
+    {
+      path: 'employees',
+      loadChildren: loadEmployeesModule
+      }
     ]
   }
 ];
