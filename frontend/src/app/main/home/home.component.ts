@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
+import { MatDialog } from '@angular/material';
+import { HomeScrollComponent } from './home-scroll/home-scroll.component';
 
 @Component({
   selector: 'home',
@@ -10,9 +12,11 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
 
   constructor(
+    protected dialog: MatDialog,
     private router: Router,
     private actRoute: ActivatedRoute,
-    protected sanitizer: DomSanitizer
+    protected sanitizer: DomSanitizer,
+
   ) {
   }
 
@@ -25,6 +29,14 @@ export class HomeComponent implements OnInit {
 
   public getImageSrc(base64: string): any {
     return base64 ? this.sanitizer.bypassSecurityTrustResourceUrl('data:image/*;base64,' + base64) : './assets/images/no-image-transparent.png';
+  }
+
+  public openDetail(data): void {
+    this.dialog.open(HomeScrollComponent, {
+      height: '330px',
+      width: '520px',
+      data: data
+    });
   }
 
 }

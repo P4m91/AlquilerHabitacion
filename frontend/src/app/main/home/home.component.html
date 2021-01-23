@@ -1,7 +1,12 @@
- <div id="menu-principal-superior">
+<!--  <div id="menu-principal-superior">
     <img src="..\..\..\assets\images\ontimize.png" alt="logo">
-  </div>
+  </div> -->
 
+  <div id="navegador">
+    <ul>
+    <li>ALQUILERES DISPONIBLES</li>
+  </ul>
+</div>
 <o-grid #grid attr="id_alquiler" service="alquileres" entity="alquileres"
   columns="ciudad;localidad;picture;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion;employee"
   quick-filter-columns="ciudad;picture;precio;id_alquiler;direccion;employee" keys="id_alquiler"
@@ -20,7 +25,7 @@
           <mat-icon>face</mat-icon><span>{{ item.employee }}</span>
         </div>
         <div>
-          <mat-icon>apartament</mat-icon><span>{{ item.ciudad }}</span>
+          <mat-icon>apartment</mat-icon><span>{{ item.ciudad }}</span>
         </div>
         <div>
           <mat-icon>place</mat-icon><span>{{ item.direccion }}</span>
