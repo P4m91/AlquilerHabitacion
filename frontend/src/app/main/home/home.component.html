@@ -1,5 +1,45 @@
-<div fxLayout="row" layout-padding fxLayoutAlign="center center">
-  <p>
-    Ontimize web seed application home component
-  </p>
-</div>
+ <div id="menu-principal-superior">
+    <img src="..\..\..\assets\images\ontimize.png" alt="logo">
+  </div>
+
+<o-grid #grid attr="id_alquiler" service="alquileres" entity="alquileres"
+  columns="ciudad;localidad;picture;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion;employee"
+  quick-filter-columns="ciudad;picture;precio;id_alquiler;direccion;employee" keys="id_alquiler"
+  sort-columns="id_alquiler" pageable="no" query-rows="16" fixed-header="yes" refresh-button="no" gutter-size="18px"
+  detail-mode="none"> <!-- (click)="openDetail(item)" -->
+  <o-grid-item *ngFor="let item of grid.dataArray">
+    <div fxLayout="column" fxLayoutAlign="space-around center"
+      class="alquiler-item mat-elevation-z1">
+      <div fxLayout="column" fxLayoutAlign="space-around center" class="image-container">
+        <mat-divider fxFlex></mat-divider>
+        <div class="image">
+          <img [src]="getImageSrc(item.picture)">
+        </div>
+        <h4></h4>
+        <div>
+          <mat-icon>face</mat-icon><span>{{ item.employee }}</span>
+        </div>
+        <div>
+          <mat-icon>apartament</mat-icon><span>{{ item.ciudad }}</span>
+        </div>
+        <div>
+          <mat-icon>place</mat-icon><span>{{ item.direccion }}</span>
+        </div>
+        <div>
+          <mat-icon>monetization_on</mat-icon><span>{{ item.precio}}</span>
+        </div>
+
+      </div>
+    </div>
+
+  </o-grid-item>
+</o-grid>
+
+
+
+
+
+
+
+
+

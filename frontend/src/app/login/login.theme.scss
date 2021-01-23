@@ -6,19 +6,41 @@
   $background: map-get($theme, background);
   $foreground: map-get($theme, foreground);
 
+
+
   .login-outer-container {
-    background-color: mat-color($background, background);
+    background-color: #ffd9da;
+
+
+    button:hover {
+      opacity: 0.8;
+      color: white;
+
+    }
+
+
+    /* version original:
+    .login-outer-container {
+    background-color: mat-color#ffaa80;*/
 
     .login-inner-container {
       background-color: mat-color($background, dialog);
+      padding-left: 80px;
+      margin: 8px 0;
 
-      .logo-container {
-        background-color: mat-color($background, dialog);
+
+    .logo-container {
+      background-color:#ced4da;
+
       }
 
-      .session-expired {
-        color: #f44336;
+    .session-expired {
+        color: black;
       }
+
+    #loginForm {
+      border: 10px solid #1a1212;
+    }
     }
   }
 }

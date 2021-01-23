@@ -23,6 +23,7 @@ public class AlquileresDao extends OntimizeJdbcDaoSupport {
  public static final String ATTR_animales = "animales";
  public static final String ATTR_curso_completo = "curso_completo";
  public static final String ATTR_direccion = "direccion";
+ public static final String ATTR_employee = "employee";
  
  
 
