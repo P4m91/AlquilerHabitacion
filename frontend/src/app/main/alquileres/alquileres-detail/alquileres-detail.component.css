@@ -8,5 +8,14 @@ form{
     margin: 0 auto;
     }
 
+#checkbox{
+  color: #595959;
+  display: block;
+  float: left;
+  font-weight: bold;
+  position: relative;
+  width: 120px;
+}
+
 
 

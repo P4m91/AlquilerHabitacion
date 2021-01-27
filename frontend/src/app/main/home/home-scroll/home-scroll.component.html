@@ -1,0 +1,32 @@
+<div attr="id_alquiler" service="alquileres" entity="alquileres"
+  columns="ciudad;localidad;picture;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion;employee"
+  quick-filter-columns="ciudad;picture;precio;id_alquiler;direccion;employee" keys="id_alquiler" fxLayout="column"
+  fxLayoutAlign="space-evenly stretch" fxFill>
+
+  <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="24px">
+    <div fxLayout="column" fxLayoutAlign="center center" fxFlex="40">
+      <div class="image">
+        <img [src]="getImageSrc(data.picture)">
+        </div>
+      </div>
+    <div fxLayout="column" fxFlex="60">
+      <span>
+        <mat-icon>face</mat-icon><span>{{ data.employee }}</span>
+
+      </span>
+      <span>
+        <mat-icon>apartment</mat-icon>{{ data.ciudad }}
+      </span>
+      <span>
+        <mat-icon>place</mat-icon>{{ data.direccion }}
+      </span>
+      <span>
+        <mat-icon>monetization_on</mat-icon>{{ data.precio }}
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+

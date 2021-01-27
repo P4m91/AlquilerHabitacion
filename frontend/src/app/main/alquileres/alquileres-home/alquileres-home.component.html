@@ -1,16 +1,13 @@
-<!-- <o-form-layout-manager title="Alquileres" separator=" " mode="tab" label-columns="id_alquiler;ciudad"> -->
+
 <o-form editable-detail="no" show-header="no">
-
-
-  <o-filter-builder #filterBuilder attr="thefilter" filters="ciudad;localidad;precio" [target]="id_alquileres"
-  query-on-change="no" query-on-change-delay="500" [expression-builder]="createFilter"></o-filter-builder>
   <div fxFlex>
       <o-table fxFlex attr="alquileresTable" service="alquileres" entity="alquileres" keys="id_alquiler"
       columns="ciudad;localidad;picture;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion;employee"
       visible-columns="ciudad;direccion;precio;employee" query-rows="20">
+      <o-table-column attr="ciudad" title="TABLE_CITY" ></o-table-column>
+      <o-table-column attr="direccion" title="TABLE_ADDRESS"></o-table-column>
+      <o-table-column attr="precio" title="TABLE_PRICE"></o-table-column>
+      <o-table-column attr="employee" title="TABLE_EMPLOYEE"></o-table-column>
       </o-table>
   </div>
 </o-form>
-  <!-- </o-form-layout-manager> -->
-
-
