@@ -14,6 +14,7 @@
   "ERROR_USER_REQUIRED": "Incorrect username.",
   "ERROR_PASS_REQUIRED": "Incorrect password.",
   "ERROR_USER_PASS_INCORRECT": "Invalid username or password.",
+<<<<<<< HEAD
   "ROOMS": "Rooms",
   "ABOUT": "About",
   "EMPLOYEES": "Employees",
@@ -21,4 +22,7 @@
   "TABLE_ADDRESS": "Address",
   "TABLE_PRICE": "Price",
   "TABLE_EMPLOYEE": "Employee"
+=======
+  "ROOMS": "ROOMS"
+>>>>>>> 9996c29f9cb90f4c85a6d5ed8dcfdae98a2090f3
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div attr="id_alquiler" service="alquileres" entity="alquileres"
   columns="ciudad;localidad;picture;precio;numero_habitaciones;id_alquiler;numero_baños;amueblada;ascensor;animales;curso_completo;direccion;employee"
   quick-filter-columns="ciudad;picture;precio;id_alquiler;direccion;employee" keys="id_alquiler" fxLayout="column"
@@ -30,3 +31,41 @@
 
 
 
+=======
+<div fxLayout="column" fxLayoutAlign="space-evenly stretch" fxFill>
+
+  <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="24px">
+    <div fxLayout="column" fxLayoutAlign="center center" fxFlex="40">
+     <!--  <div class="image">
+        <img [src]="getImageSrc(data.EMPLOYEEPHOTO)">
+      </div> -->
+      <span> {{ item.employee }} </span>
+      <mat-divider></mat-divider>
+      <!-- <span class="employee-type">{{ 'EMPLOYEETYPE_' + data.EMPLOYEETYPEID | oTranslate }}</span>
+      <mat-divider></mat-divider>
+    </div>
+    <div fxLayout="column" fxFlex="60" class="employee-data">
+      <span *ngIf="data.EMPLOYEEEMAIL">
+        <mat-icon>email</mat-icon>{{ data.EMPLOYEEEMAIL }}
+      </span>
+      <span *ngIf="data.EMPLOYEEPHONE">
+        <mat-icon>smartphone</mat-icon>{{ data.EMPLOYEEPHONE }}
+      </span>
+      <span *ngIf="data.EMPLOYEEADDRESS">
+        <mat-icon>home</mat-icon>{{ data.EMPLOYEEADDRESS }}
+      </span>
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="end center">
+    <span class="employee-office">{{ 'EMPLOYEE_BRANCH' | oTranslate : {values: [data.NAME]} }}</span> -->
+  </div>
+
+</div>
+
+<!-- <o-form service="employees" entity="employee" keys="EMPLOYEEID" keys-sql-types="INTEGER" show-header-navigation="yes">
+  <o-text-input attr="EMPLOYEENAME"></o-text-input>
+  <o-text-input attr="EMPLOYEESURNAME"></o-text-input>
+  <o-image attr="EMPLOYEEPHOTO" emptyimage="./assets/images/no-image.png"></o-image>
+</o-form> -->
+>>>>>>> 9996c29f9cb90f4c85a6d5ed8dcfdae98a2090f3

@@ -31,7 +31,11 @@ export class HomeComponent implements OnInit {
     return base64 ? this.sanitizer.bypassSecurityTrustResourceUrl('data:image/*;base64,' + base64) : './assets/images/no-image-transparent.png';
   }
 
+<<<<<<< HEAD
   public openDetail(data:any): void {
+=======
+  public openDetail(data): void {
+>>>>>>> 9996c29f9cb90f4c85a6d5ed8dcfdae98a2090f3
     this.dialog.open(HomeScrollComponent, {
       height: '330px',
       width: '520px',
